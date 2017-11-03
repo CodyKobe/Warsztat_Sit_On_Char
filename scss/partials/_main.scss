@@ -65,6 +65,12 @@
         position: absolute;
         left: 0;
         top: 0;
+
+        img {
+            position: relative;
+            max-width: 90%;
+            width: 100%;
+        }
     }
 
     .slide-image {
@@ -75,12 +81,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .slide img {
-        position: relative;
-        max-width: 90%;
-        width: 100%;
     }
 
     .slide-cnt {
@@ -101,10 +101,10 @@
         font-size: 43px;
         font-weight: 400;
         text-align: center;
-    }
 
-    .slide-title span {
-        color: #27C7AB;
+        span {
+            color: #27C7AB;
+        }
     }
 
     .slide-cnt p {

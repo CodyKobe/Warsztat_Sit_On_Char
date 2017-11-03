@@ -472,6 +472,12 @@ input[type=button] {
   top: 0;
 }
 
+.section-slider .slide img {
+  position: relative;
+  max-width: 90%;
+  width: 100%;
+}
+
 .section-slider .slide-image {
   float: left;
   width: 50%;
@@ -480,12 +486,6 @@ input[type=button] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.section-slider .slide img {
-  position: relative;
-  max-width: 90%;
-  width: 100%;
 }
 
 .section-slider .slide-cnt {

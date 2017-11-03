@@ -1,15 +1,11 @@
 @import "header";
-@import "footer";
-
-// @import i inne style
+@import "footer"; // @import i inne style
 
 * {
     box-sizing: border-box;
 }
 /* ------------------------------------------------------------------- */
-
-/* globalne klasy */
-
+/* global class */
 /* ------------------------------------------------------------------- */
 
 .container {
@@ -17,15 +13,14 @@
     margin: 0 auto;
     max-width: 1040px;
     font-family: 'Raleway', sans-serif;
-    font-family: 'Kurale', serif;
-    font-family: 'Raleway Dots', cursive;
-    font-size: 3rem;
 }
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -40,23 +35,33 @@
     white-space: nowrap;
 }
 /*------------------------------------------------------------------*/
-
 /* page header */
-
 /*------------------------------------------------------------------*/
 
 .main-header {
+    background: black;
+    color: white;
+    position: relative;
+    z-index: 100;
+    height: 40px;
 
-}
-.main-logo {
+    .main-logo {
+        font-size: 16px;
+        line-height: 40px;
+        padding-left: 4px;
+        float: left;
+        font-weight: bold;
 
-}
-.main-nav {
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
 
+        span {
+            color: #38C3AD;
+        }
+    }
 }
-.main-nav ul {
-
-}
-.main-nav li {
-    
-}
+/* ------------------------------------------------------------------- */
+/* main nav */
+/* ------------------------------------------------------------------- */

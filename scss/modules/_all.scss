@@ -1,5 +1,57 @@
 @import "reset";
 @import "colors";
-@import "mixins";
+@import "mixins"; // @import i deklaracje pozostałych modulów
 
-// @import i deklaracje pozostałych zmiennych
+* {
+    box-sizing: border-box;
+}
+/* ------------------------------------------------------------------- */
+/* global class */
+/* ------------------------------------------------------------------- */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1040px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    background: #38C3AD;
+    border: 1px solid #38C3AD;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    transition: 0.5s opacity;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+/* ------------------------------------------------------------------- */

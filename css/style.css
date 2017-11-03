@@ -232,8 +232,6 @@ input[type=button] {
 
 /*colors defs*/
 /*mixins*/
-/*header*/
-/*footer*/
 * {
   box-sizing: border-box;
 }
@@ -268,6 +266,26 @@ input[type=button] {
   white-space: nowrap;
 }
 
+.button {
+  color: white;
+  text-decoration: none;
+  background: #38C3AD;
+  border: 1px solid #38C3AD;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  transition: 0.5s opacity;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* ------------------------------------------------------------------- */
 /*------------------------------------------------------------------*/
 /* page header */
 /*------------------------------------------------------------------*/
@@ -296,9 +314,9 @@ input[type=button] {
   color: #38C3AD;
 }
 
-/* ---------------------------------- */
+/* ------------------------------- */
 /* main nav */
-/* ---------------------------------- */
+/* ------------------------------- */
 .main-nav {
   float: right;
   text-align: right;
@@ -386,3 +404,4 @@ input[type=button] {
 }
 
 /* ------------------------------------------------------------------- */
+

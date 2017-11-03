@@ -303,9 +303,6 @@ input[type=button] {
   padding-left: 4px;
   float: left;
   font-weight: bold;
-}
-
-.main-header .main-logo a {
   text-decoration: none;
   color: #fff;
 }

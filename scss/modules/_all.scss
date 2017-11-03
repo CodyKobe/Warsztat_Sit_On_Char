@@ -5,10 +5,13 @@
 * {
     box-sizing: border-box;
 }
+
+:root {
+    font-family: Raleway, sans-serif;
+}
 /* ------------------------------------------------------------------- */
 /* global class */
 /* ------------------------------------------------------------------- */
-
 .container {
     width: 100%;
     margin: 0 auto;
@@ -52,6 +55,32 @@
 
     &:hover {
         opacity: 0.8;
+    }
+}
+
+.title-border {
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        bottom: 0;
+        left: 0;
+        width: 150px;
+        height: 6px;
+        background: #38C3AD;
+        position: absolute;
+        content: '';
+    }
+}
+
+.title-border-big {
+    font-size: 25px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+
+    &::after {
+        width: 320px;
+        height: 8px;
     }
 }
 /* ------------------------------------------------------------------- */

@@ -1,0 +1,150 @@
+/* ------------------------------------------------------------------- */
+/* content - section 1 */
+/* ------------------------------------------------------------------- */
+
+.section-slider {
+    z-index: 1;
+    width: 100%;
+    height: 538px;
+    background: #FCFCFC;
+    /* Old browsers */
+    background: linear-gradient(to bottom, #FCFCFC 37%, #F2F5F6 72%, #CECECE 98%, #CECECE 100%, #F2F5F6 100%, #CECECE 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
+
+    .container,
+    .row {
+        height: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+    .left,
+    .right {
+        width: 60px;
+        color: #38C3AD;
+        font-weight: 400;
+        font-size: 80px;
+        position: absolute;
+        background: none;
+        border: 0;
+        top: 0;
+        bottom: 0;
+        transition: 0.5s all;
+    }
+    // .left {
+    //     left: 0;
+    // }
+    .right {
+        right: 0;
+    }
+
+    .left:hover,
+    .right:hover {
+        color: #222;
+    }
+
+    .left:focus,
+    .right:focus {
+        outline: none;
+    }
+
+    .slider-cnt {
+        margin: 0 100px;
+        height: 100%;
+        position: relative;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .slide-image {
+        float: left;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide img {
+        position: relative;
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .slide-cnt {
+        height: 100%;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide-title {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 43px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .slide-title span {
+        color: #27C7AB;
+    }
+
+    .slide-cnt p {
+        margin: 30px -5px;
+        font-size: 17px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .button {
+        margin-top: 35px;
+    }
+    /* stany slide */
+    .slide img {
+        top: -50px;
+        opacity: 0;
+        transition: 0.5s 0s ease-in-out all;
+    }
+
+    .slide .slide-cnt {
+        opacity: 0;
+        top: -50px;
+        position: relative;
+        transition: 0.5s 0.3s ease-in-out all;
+    }
+    /* aktywny slide */
+    .slide.active {
+        z-index: 100;
+
+        img {
+            top: 0;
+            left: 0;
+            opacity: 1;
+        }
+
+        .slide-cnt {
+            opacity: 1;
+            top: 0;
+        }
+    }
+}
+/* ------------------------------------------------------------------- */

@@ -1,7 +1,9 @@
-#zips
 *.zip
+.idea
+node_modules
 
-##############
+
+##########
 
 # Logs
 logs
@@ -61,4 +63,3 @@ typings/
 
 # dotenv environment variables file
 .env
-

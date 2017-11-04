@@ -1,4 +1,5 @@
 
+
 //========================================
 //main slider
 //========================================
@@ -102,3 +103,17 @@
 	});
 })();
 
+// var nameBox = document.querySelectorAll( ".picture-cnt-description" );
+var pictureCnt = document.querySelectorAll( ".picture-cnt:not(.active)" );
+for( var i = 0; i < pictureCnt.length; i++ ) {
+
+	pictureCnt[i].addEventListener( 'mouseover', function() {
+		var nameBox = this.querySelector(".picture-cnt-description");
+		nameBox.style.top = "-70px";
+	} );
+
+	pictureCnt[i].addEventListener('mouseleave', function(){
+		var nameBox = this.querySelector(".picture-cnt-description");
+		nameBox.style.top = "120px";
+	})
+}

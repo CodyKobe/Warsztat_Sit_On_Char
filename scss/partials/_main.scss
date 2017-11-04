@@ -178,7 +178,8 @@
         border: 1px solid transparent;
         height: 70px;
         width: 100%;
-        transition: 0.5s all;
+        transition: 0.8s transform;
+        transition: 0.5s top;
     }
 
     .title-border {

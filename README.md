@@ -1,2 +1,5 @@
-# warsztat-sitOnChar
-Warsztat zaawansowany CSS i basic.js
+  
+# Sit On Char exercise  
+  
+SCSS refactoring and js events exercise.  
+  

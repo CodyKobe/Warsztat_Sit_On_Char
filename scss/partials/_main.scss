@@ -1,6 +1,7 @@
 /* ------------------------------------------------------------------- */
 /* content - section 1 */
 /* ------------------------------------------------------------------- */
+
 .section-slider {
     z-index: 1;
     width: 100%;
@@ -117,7 +118,7 @@
     .button {
         margin-top: 35px;
     }
-    /* stany slide */
+
     .slide img {
         top: -50px;
         opacity: 0;
@@ -130,7 +131,7 @@
         position: relative;
         transition: 0.5s 0.3s ease-in-out all;
     }
-    /* aktywny slide */
+
     .slide.active {
         z-index: 100;
 
@@ -149,7 +150,6 @@
 /* ------------------------------------------------------------------- */
 /* section 2 - boxes */
 /* ------------------------------------------------------------------- */
-
 .section-boxes {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -226,7 +226,6 @@
 /* ------------------------------------------------------------------- */
 /* section 3 - prices */
 /* ------------------------------------------------------------------- */
-
 .prices-section {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -314,7 +313,6 @@
         margin-top: auto;
     }
 }
-/* active */
 
 .price-list-box.active {
     background: #27C7AB;
@@ -341,4 +339,132 @@
 }
 /* ------------------------------------------------------------------- */
 /* contact - section 4 */
+/* ------------------------------------------------------------------- */
+
+.section-contact {
+    padding-top: 40px;
+}
+
+.contact-us-form {
+    margin-top: 40px;
+
+    label {
+        display: none;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-family: 'Raleway', sans-serif;
+        border: 1px solid #A1E6D1;
+        height: 65px;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 28px;
+        font-weight: 300;
+        font-size: 24px;
+    }
+
+    textarea {
+        height: 195px;
+        resize: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: #38C3AD;
+        box-shadow: inset 0 0 0 1px #38C3AD;
+        outline: none;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #C9C9C9;
+    }
+
+    ::-moz-placeholder {
+        color: #C9C9C9;
+    }
+
+    :-ms-input-placeholder {
+        color: #C9C9C9;
+    }
+
+    :-moz-placeholder {
+        color: #C9C9C9;
+    }
+
+    .col.col-left {
+        width: 630px;
+        float: left;
+    }
+
+    .col.col-right {
+        width: 340px;
+        float: right;
+    }
+}
+
+.contact-us-form-img {
+    display: block;
+    height: 210px;
+    background: url("../images/red_chair.png") center top no-repeat;
+}
+
+.contact-us-form-btn {
+    font-size: 26px;
+    padding: 15px 30px;
+    font-weight: bold;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.contact-us-form {
+    .checkbox-label {
+        margin-top: 30px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+
+        input {
+            position: absolute;
+            left: -1000px;
+        }
+
+        input ~ .checkbox-icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #A1E6D1;
+            display: inline-block;
+        }
+
+        input ~ .checkbox-icon:before {
+            width: 50px;
+            height: 50px;
+            background: url("../images/form_ok.jpg") center center no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            opacity: 0;
+            visibility: visible;
+            transform: scale(0.6, 0.6);
+            transition: 0.5s all;
+        }
+
+        input:checked ~ .checkbox-icon:before {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1, 1);
+        }
+
+        .checkbox-text {
+            display: inline-block;
+            width: calc(100% - 70px);
+            vertical-align: top;
+            padding: 5px 0 0 5px;
+            color: #aaa;
+        }
+    }
+}
 /* ------------------------------------------------------------------- */

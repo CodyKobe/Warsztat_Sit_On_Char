@@ -1,1 +1,66 @@
-/*footer*/
+/* ------------------------------------------------------------------- */
+/* footer */
+/* ------------------------------------------------------------------- */
+.main-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .col:nth-of-type(2) {
+        text-align: right;
+    }
+
+    .copyright {
+        font-size: 16px;
+        color: #9B9B9B;
+    }
+
+    .social-icons {
+        display: inline-block;
+    }
+
+    .footer-logo {
+        display: inline-block;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #9B9B9B;
+        margin-left: 70px;
+        vertical-align: top;
+        line-height: 35px;
+    }
+}
+/* --------------------------------- */
+/* footer social icons */
+/* --------------------------------- */
+.social-icons {
+    li {
+        display: inline-block;
+
+        .social {
+            width: 35px;
+            height: 35px;
+            text-indent: -999px;
+            overflow: hidden;
+            text-align: left;
+            display: inline-block;
+        }
+    }
+
+    .social-flickr {
+        background: url("../images/flickr.png") no-repeat;
+    }
+
+    .social-vimeo {
+        background: url("../images/vimeo.png") no-repeat;
+    }
+
+    .social-pinterest {
+        background: url("../images/pinterest.png") no-repeat;
+    }
+
+    .social-twitter {
+        background: url("../images/twitter.png") no-repeat;
+    }
+}
+/* ------------------------------------------------------------------- */

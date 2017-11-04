@@ -19,7 +19,7 @@
         color: #fff;
 
         span {
-            color: #38C3AD;
+            color: $primary-lighter;
         }
     }
 }
@@ -48,7 +48,7 @@
             transition: 0.5s color;
 
             &:hover {
-                color: #27C7AB;
+                color: $primary-darker;
             }
         }
     }
@@ -109,7 +109,7 @@
     }
 
     li:hover > a {
-        color: #27C7AB;
+        color: $primary-darker;
     }
 }
 /* ------------------------------------------------------------------- */

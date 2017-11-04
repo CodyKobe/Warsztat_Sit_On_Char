@@ -26,7 +26,7 @@
     .left,
     .right {
         width: 60px;
-        color: #38C3AD;
+        color: $primary-lighter;
         font-weight: 400;
         font-size: 80px;
         position: absolute;
@@ -103,7 +103,7 @@
         text-align: center;
 
         span {
-            color: #27C7AB;
+            color: $primary-darker;
         }
     }
 
@@ -247,7 +247,7 @@
         font-size: 26px;
         text-align: center;
         text-transform: uppercase;
-        color: #27C7AB;
+        color: $primary-darker;
         margin-top: 20px;
     }
 
@@ -315,26 +315,26 @@
 }
 
 .price-list-box.active {
-    background: #27C7AB;
-    border-color: #27C7AB;
+    background: $primary-darker;
+    border-color: $primary-darker;
 
     .price-list-box-title {
         color: #FFF;
     }
 
     .price-list-box-price {
-        border-color: #27C7AB;
+        border-color: $primary-darker;
     }
 
     .price-cnt .price,
     .price-cnt .small,
     .price-text {
-        color: #27C7AB;
+        color: $primary-darker;
     }
 
     .button {
         background: #FFF;
-        color: #27C7AB;
+        color: $primary-darker;
     }
 }
 /* ------------------------------------------------------------------- */
@@ -373,8 +373,8 @@
     input[type="text"]:focus,
     input[type="email"]:focus,
     textarea:focus {
-        border-color: #38C3AD;
-        box-shadow: inset 0 0 0 1px #38C3AD;
+        border-color: $primary-lighter;
+        box-shadow: inset 0 0 0 1px $primary-lighter;
         outline: none;
     }
 

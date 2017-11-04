@@ -8,6 +8,9 @@ pictureCnt[ i ].addEventListener( 'mouseleave', function() {
 	var nameBox = this.querySelector( ".picture-cnt-description" );
 	nameBox.style.top = "120px";
 } );
+    // zad.2
+    var pictureCnt = document.querySelectorAll( ".picture-cnt:not(.active)" );
+    for( var i = 0; i < pictureCnt.length; i++ ) {
 
 
 var prevSlide = function() {
@@ -38,6 +41,30 @@ var nextSlide = function() {
 
 	//zwiekszam licznik
 	currentSlide++;
+    // zad.1
+    var firstLi = document.querySelector( ".main-nav li " );
+    var fade = document.querySelector( ".main-nav .submenu" );
+    firstLi.addEventListener( 'mouseover', function() {
+        fade.style.top = "55px";
+    } );
+    firstLi.addEventListener( 'mouseleave', function() {
+        fade.style.top = "-140px";
+        fade.style.transition = "0.5 top";
+    } );
+
+    // zad.3
+    function fadeSlideFun() {
+        var fadeSlide = document.querySelectorAll( ".section-slider .slide" );
+        for( var i = 0; i < fadeSlide.length; i++ ) {
+            fadeSlide[ i ].classList.toggle( 'active' );
+        }
+    }
+
+    var leftButton = document.querySelector( ".section-slider .left" );
+    leftButton.addEventListener( 'click', fadeSlideFun );
+
+    var rightButton = document.querySelector( ".section-slider .right" );
+    rightButton.addEventListener( 'click', fadeSlideFun );
 
 	//jezeli licznik jest wiekszy od indeksu ostatniego slide
 	//wracamy do poczatku (by dzialalo w petli)

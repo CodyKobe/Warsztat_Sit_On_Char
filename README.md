@@ -1,9 +1,10 @@
-# Sit On Char exercise
+## Sit On Char Site
 
-SCSS refactoring and js events exercise.
+SASS, Gulp and JavaScript events learning
 
-### Instalacja
+#### Project installing
 
-przez polecenie:
+##### with node command:
 
-````npm install gulp browser-sync gulp-ruby-sass gulp-sass gulp-rename gulp-sourcemaps````
+``npm install gulp browser-sync gulp-ruby-sass gulp-sass gulp-rename gulp-sourcemaps``
+

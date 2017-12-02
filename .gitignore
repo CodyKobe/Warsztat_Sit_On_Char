@@ -1,9 +1,7 @@
-*.zip
-.idea
 node_modules
+.idea
 
-
-##########
+#####
 
 # Logs
 logs
